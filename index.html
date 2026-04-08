@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ReadScape</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>📚 ReadScape</h1>
+    <input type="text" id="searchInput" placeholder="Search books..." />
+    <button onclick="searchBooks()">Search</button>
+    <button onclick="toggleTheme()">🌙 Toggle Mode</button>
+  </header>
+
+  <section id="loading" class="hidden">Loading...</section>
+  <section id="booksContainer"></section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
