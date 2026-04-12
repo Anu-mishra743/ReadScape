@@ -4,20 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ReadScape</title>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
   <header>
     <h1>📚 ReadScape</h1>
+
     <input type="text" id="searchInput" placeholder="Search books..." />
-    <button onclick="searchBooks()">Search</button>
-    <button onclick="toggleTheme()">🌙 Toggle Mode</button>
+
+    <div class="controls">
+      <button onclick="searchBooks()">Search</button>
+      <button onclick="sortBooks()">Sort A–Z</button>
+      <button onclick="filterBooks()">Filter Authors</button>
+      <button onclick="showFavorites()">❤️ Favorites</button>
+      <button onclick="toggleTheme()">🌙 Toggle Mode</button>
+    </div>
   </header>
 
-  <section id="loading" class="hidden">Loading...</section>
+  <!-- Welcome Section -->
+  <section id="welcome">
+    <h2>📖 Discover Your Next Favorite Book</h2>
+    <p>Browse popular books or search anything you like</p>
+  </section>
+
+  <section id="loading" >Loading...</section>
   <section id="booksContainer"></section>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
